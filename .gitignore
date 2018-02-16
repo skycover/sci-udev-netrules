@@ -1,0 +1,16 @@
+debian/sci-udev-netrules.default
+debian/sci-udev-netrules.postinst.debhelper
+debian/sci-udev-netrules.postrm.debhelper
+debian/sci-udev-netrules.preinst.debhelper
+debian/sci-udev-netrules.prerm.debhelper
+debian/sci-udev-netrules.debhelper.log
+debian/sci-udev-netrules.substvars
+debian/sci-udev-netrules
+debian/files
+Makefile
+build-stamp
+install-stamp
+config.log
+config.status
+debian/debhelper-build-stamp
+build

@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+INSTDIR=$(CURDIR)/debian/sci-setup
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp:
+	dh build
+	touch build-stamp
+
+clean:
+	dh clean
+
+install: build install-stamp
+install-stamp:
+	dh install --until dh_auto_install
+	dh install --after dh_auto_install
+	touch install-stamp
+
+binary-arch: install
+
+binary-indep: install
+	dh binary-indep
+
+override_dh_usrlocal:
+
+binary: binary-arch binary-indep

@@ -1,0 +1,4 @@
+config/sci-udev-netrules.sh /etc/init.d
+config/write_net_rules /etc/udev
+config/rule_generator.functions /etc/udev
+config/71-persistent-net-generator.rules /etc/udev/rules.d

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Add rules copy init script
+if [ -x "/etc/init.d/sci-udev-netrules.sh" ]; then
+       update-rc.d sci-udev-netrules.sh defaults >/dev/null
+fi
+
